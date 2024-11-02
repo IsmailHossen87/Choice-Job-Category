@@ -6,7 +6,7 @@ const Navbar = () => {
         <>
           <li><a className='font-bold'> <NavLink to={'/'}>Static</NavLink></a></li>
           <li><a className='font-bold'> <NavLink to={'/featureJob'}>Apply Job</NavLink></a></li>
-          <li><a className='font-bold'> <NavLink >Blog</NavLink></a></li>
+          <li><a className='font-bold'> <NavLink to={'/ListedJobs'}>Pending Job</NavLink></a></li>
         </>
     )
     return (

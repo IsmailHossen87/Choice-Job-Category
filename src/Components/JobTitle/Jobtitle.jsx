@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Jobtitle = ({data}) => {
     const {company_name,id,job_title,logo,location,salary,remote_or_onsite} = data
-    console.log(data)
     return (
         <div className='bg-indigo-100 py-4 px-3 pl-9 space-y-2 rounded-2xl'>
             <img src={logo} alt="" />
@@ -16,7 +16,7 @@ const Jobtitle = ({data}) => {
                 <h3>{location}</h3>
                 <p>{salary}</p>
             </div>
-            <button className='btn btn-primary'>View Deatails</button>
+            <Link to={`/jobsdetails/${id}`}><button className='btn btn-primary'>View Deatails</button></Link>
         </div>
     );
 };
